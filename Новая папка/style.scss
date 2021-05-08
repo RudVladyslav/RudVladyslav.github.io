@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+// ==== mixin ==== //
+@mixin montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// ==== \mixin ==== //
+// ==== variables ==== //
+$breakpoint-sm-min: 576px;
+$breakpoint-xs-max: $breakpoint-sm-min - 1px;
+$breakpoint-md-min: 768px;
+$breakpoint-sm-max: $breakpoint-md-min - 1px;
+$breakpoint-lg-min: 992px;
+$breakpoint-md-max: $breakpoint-lg-min - 1px;
+$breakpoint-xl-min: 1200px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1px;
+$breakpoint-xxl-min: 1400px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1px;
+$fw-light:300;
+$fw-regular:400;
+$fw-bold:700;
+$base:5px;
+// $base_color: ;
+// $dark_color: ;
+// $light_color: ;
+// ==== \variables ==== //
+// ==== common ==== //
+h2 {
+    text-align: center;
+    font-weight: $fw-regular;
+}
+
+body {
+    @include montserrat;
+}
+
+.section-outer {
+    padding: 0 $base*4;
+    @media (max-width: $breakpoint-sm-max) {
+        padding: 0;
+    }
+}
+
+.section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// ==== \common ==== //
+// ==== section-nav-bar ==== //
+.section-header {
+    background-image: url(../img/Rectangle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+        object-fit: contain;
+        width: 20%;
+        height: 20%;
+    }
+}
+
+.nav-wrap {
+    display: flex;
+    list-style: none;
+}
+
+.nav-wrap__link {
+    &+& {
+        margin-left: 30px;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.base-btn {
+    cursor: pointer;
+    background-color: #FFD324;
+    padding: 15px 25px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    transition: .5s;
+    p {
+        margin: 0;
+    }
+    &:hover {
+        box-shadow: 0px 0px 29px rgba(255, 249, 94, 0.54);
+        transition: .5s;
+    }
+}
+
+.base-btn-disable {
+    cursor: pointer;
+    background-color: none;
+    border: 2px solid #FFD324;
+    padding: 15px 25px;
+    border-radius: 30px;
+    transition: .5s;
+    &:hover {
+        background-color: lighten(#FFD324, 20%);
+        transition: .5s;
+    }
+}
+
+.header-info {
+    max-width: 700px;
+    padding-bottom: 200px;
+    h1,
+    h3 {
+        color: #FFD324;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 29px rgba(255, 249, 94, 0.54)
+    }
+    p {
+        color: white;
+        max-width: 600px;
+    }
+    button {
+        margin-top: 40px;
+        p {
+            color: #1A202C;
+        }
+    }
+    h1 {
+        font-size: xxx-large;
+    }
+    h3 {
+        font-size: xx-large;
+    }
+}
+
+// ==== \section- ==== //
+// ==== section-our-us==== //
+.section-our-us {
+    display: flex;
+}
+
+.our-us__content {
+    max-width: 400px;
+    h3 {
+        font-size: xx-large;
+    }
+}
+
+// ==== \section-our-us==== //
+.nav-wrap__asotiment {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li+li {
+        margin-left: 30px;
+    }
+}
+
+.base-btn__client {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.client {
+    display: flex;
+    &-item {
+        cursor: pointer;
+        p {
+            margin: 0;
+        }
+        .price {
+            margin-top: 10px;
+            font-weight: $fw-bold;
+        }
+        &+& {
+            margin-left: 15px;
+        }
+    }
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}
