@@ -1,0 +1,139 @@
+body {
+	background-color: lavender;
+}
+
+h1 {
+	text-align: center;
+	color: grey;
+	font-style: italic;
+}
+
+h2{
+	text-align: center;
+	color: grey;
+}
+
+.app-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.add-todo-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+input {
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	padding: 3px;
+	background: #ffffff;
+	outline: none;
+	height: 24px;
+	width: 320px;
+	color: #cccccc;
+	font-family: Tahoma, cursive;
+	font-size: medium;
+}
+
+#add-task-btn {
+	height: 24px;
+	min-width: 80px;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	background: cadetblue;
+	box-shadow: 0 -3px rgb(201, 202, 202) inset;
+	transition: 0.2s;
+	cursor: pointer;
+	margin-left: 20px;
+	outline: none;
+}
+#add-task-btn:hover {
+	background: rgb(125, 143, 134);
+}
+
+#add-task-btn :active {
+	background: rgb(61, 65, 63);
+	box-shadow: 0 3px rgb(61, 65, 63) inset;
+}
+
+.to-do-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	background-color: rgb(126, 73, 73);
+	border-radius: 5px;
+	min-height: 30px;
+}
+
+.to-do-item.checked{
+	background: rgb(120, 128, 128);
+opacity: 0.5;
+
+}
+
+.to-do-item.checked p{
+	text-decoration: line-through;
+
+}
+
+.to-do-item+.to-do-item{
+	margin-top: 20px;
+}
+
+.description{
+	width: 200px;
+	padding: 3px;
+}
+
+.complete{
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	margin-right: 10px;
+
+}
+.buttons{
+	display: flex;
+	align-items: center;
+}
+
+
+
+.delete{
+	background-color: red;
+	outline: none;
+	border:none;
+	height: 25px;
+	min-width: 80px;
+	font-size: medium;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+
+
+
+.to-do-item p{
+	color:white;
+	font-size: large;
+	font-family: Calibri, cursive;
+}
+
+.edit{
+	background-color: sandybrown;
+	outline: none;
+	border:none;
+	height: 25px;
+	min-width: 80px;
+	font-size: medium;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 10px;
+	border-radius: 5px;
+}
