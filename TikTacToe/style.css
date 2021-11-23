@@ -1,0 +1,97 @@
+body {
+    background: lightyellow;
+}
+
+.box {
+    border: 1px solid darkgoldenrod;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    font-size: xxx-large;
+    text-align: center;
+    color: darkgoldenrod;
+    transition:0.5s;
+
+}
+
+.box:hover {
+    background-color: yellow;
+    transition: 0.5s;
+
+}
+
+.onPcMoves {
+    text-align: center;
+    color: brown;
+    height: 30px;
+    margin: 0;
+}
+
+.newGame{
+    border: none;
+    background-color:cornflowerblue;
+    padding: 20px;
+    font-size: large;
+    border-radius: 25px;
+    cursor: pointer;
+    color: lightyellow;
+    transition: 0.5s;
+
+}
+
+.newGame:hover{
+    background-color: #3C62ABFF;
+    transition: 0.5s;
+}
+
+.game-wrapper {
+    margin-top: 100px;
+}
+
+.area {
+    margin: 0 auto;
+    max-width: 210px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 50px;
+}
+
+.winner {
+    text-align: center;
+    color: cornflowerblue;
+    font-size: xxx-large;
+    font-weight: bold;
+    font-style: italic;
+    height: 50px;
+}
+
+h1, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.game-title {
+    text-align: center;
+    font-size: xxx-large;
+    font-style: italic;
+    color: cornflowerblue;
+}
+
+.error {
+    color: red;
+    font-size: x-large;
+    height: 20px;
+}
+
+.statistics-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.isPlayer {
+    font-size: x-large;
+    color: brown;
+}
