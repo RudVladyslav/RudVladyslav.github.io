@@ -1,0 +1,77 @@
+body {
+    height: 100vh;
+    background: #0f2027; /* fallback for old browsers */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-sizing: content-box;
+}
+
+.main-wrapper{
+    margin-top: 100px;
+}
+
+.inputs-wrapper{
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+
+.input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    border: none;
+    width: 80%;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;-webkit-appearance: none;
+    font-weight: bold;
+    outline: none;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input + .input{
+    margin-top: 15px;
+}
+
+.inputs-block{
+    display: flex;
+}
+
+.inputs-block-column + .inputs-block-column{
+    margin-left: 40px;
+}
+
+h6{
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+
+.result-block{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.total-numb input, .total{
+    background: #0f2027;
+    color: white;
+    border: none;
+    font-size: x-large;
+    outline: none;
+}
+
+{
+
+}
