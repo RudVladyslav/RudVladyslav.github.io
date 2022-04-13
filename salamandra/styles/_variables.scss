@@ -1,0 +1,24 @@
+$black: #232323;
+
+$primary: #68ac68;
+$secondary: #104569;
+$danger: #d32f2f;
+$warning: #fbc02d;
+$light: #fff;
+$black: #000;
+
+$container-width: 90%;
+
+$duration: 0.15s;
+
+$breakpoint-xs-min: 0;
+$breakpoint-sm-min: 576px;
+$breakpoint-xs-max: $breakpoint-sm-min - 1px;
+$breakpoint-md-min: 768px;
+$breakpoint-sm-max: $breakpoint-md-min - 1px;
+$breakpoint-lg-min: 992px;
+$breakpoint-md-max: $breakpoint-lg-min - 1px;
+$breakpoint-xl-min: 1200px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1px;
+$breakpoint-xxl-min: 1400px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1px;
