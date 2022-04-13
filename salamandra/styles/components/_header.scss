@@ -1,0 +1,19 @@
+@import "../variables";
+
+header {
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    color: $light;
+    padding: 25px 0;
+    @media (max-width: $breakpoint-sm-max) {
+      text-align: center;
+    }
+  }
+
+}
+
+
