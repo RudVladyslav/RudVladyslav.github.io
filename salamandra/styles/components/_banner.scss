@@ -1,0 +1,29 @@
+@import "../variables";
+
+.section-banner{
+  height: 300px;
+  @media (max-width: $breakpoint-xs-max) {
+    height: 450px;
+  }
+  background-color: $secondary;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+
+}
+
+.banner-title{
+  color: $light;
+  margin-top: 50px;
+  font-weight: lighter;
+}
+
+.banner-subtitle{
+  color: $primary;
+  margin-top: 20px;
+  font-weight: lighter;
+  font-style: italic;
+
+}
+
+
