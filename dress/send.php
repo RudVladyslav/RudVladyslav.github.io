@@ -30,7 +30,7 @@ $utm_term = $_REQUEST['utm_term'];
 // отсылаем данные на почту
 
  $mes = "product-ID: $product_id_1 \nТелефон: $phone \nИмя: $name";
- $address = "ferrlando1@gmail.com"; // куда отсылать
+ $address = "gydinidog74@gmail.com"; // куда отсылать
 
 $sub = "Заказ $product_id_1"; // тема письма
 $email = 'email <email>'; // от кого
