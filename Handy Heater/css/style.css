@@ -12,7 +12,7 @@
 }
 /*block2*//* endzeit_____ */
 .b2 {
-    background-color: #000;
+    background: url(../img/Pat_1.png) repeat;
     z-index: 2;
     padding: 0;
 }
@@ -74,7 +74,7 @@
 }
 /*block4*//* bizlife_inc */
 .b4 {
-   background: #000;
+    background: url(../img/Pat_1.png) repeat;
     padding: 0;
 }
 .b4 h2 {
